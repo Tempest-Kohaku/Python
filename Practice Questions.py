@@ -1,11 +1,4 @@
-a = (input("Enter the Number : "))
-tmp = a
-reverse = ''
-print((a))
-for i in range(len(a),0,-1) : 
-    reverse += a[i-1]
-    
-    # x = a%10
-    # reverse = (reverse * 10) + (x)
-    # a = a//10
-print(f"The Reverse of {tmp} is {reverse}")
+a = [10,20,30,40,50,60,70,80,90,100]
+for i in range(len(a)) : 
+    if i%2 != 0 : 
+        print(a[i])
