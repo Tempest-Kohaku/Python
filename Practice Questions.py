@@ -5,6 +5,7 @@ print((a))
 for i in range(len(a),0,-1) : 
     reverse += a[i-1]
     
+# while a > 0   
     # x = a%10
     # reverse = (reverse * 10) + (x)
     # a = a//10
