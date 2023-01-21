@@ -1,4 +1,11 @@
-a = [10,20,30,40,50,60,70,80,90,100]
-for i in range(len(a)) : 
-    if i%2 != 0 : 
-        print(a[i]) 
+n = int(input("Enter the Maximum range of the Triangular Pattern : "))
+for i in range(1,n) : 
+    for j in range(i) : 
+        print("*",end = " ")
+    print(" ")
+i = 1
+j = 1
+for i in range(n,0,-1) : 
+    for j in range(i) : 
+        print("*",end = " ")
+    print(" ")
