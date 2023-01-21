@@ -1,5 +1,5 @@
-a = list()
-for i in range(4,31) :
-    if i%2 == 0 : 
-        b = a.append(i)
-print(a)
+def display_student(name = "Scott",age = "18") : 
+    print(name,"is",age,"years old")
+name = input("Enter the Name of the User : ")
+age = input("Enter the Age of the User : ")
+display_student(name,age)
