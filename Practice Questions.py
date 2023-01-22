@@ -1,13 +1,6 @@
-list = [10,20,60,30,20,40,30,60,70,80]
-exist = {}
-print(type(exist))
-duplicates = []
-for i in list : 
-    if i not in exist : 
-        exist[i] = 1
-    else : 
-        duplicates.append(i)
-    print(duplicates)
-    print("\\")
-    print(exist)
-    print("\\")
+n = int(input("Enter the NUmber of the Rows in the Pattern : "))
+for i in range(n,0,-1) : 
+    for j in range(i) : 
+        print(i,end = " ")
+    print(" ")
+ 
