@@ -20,9 +20,9 @@ def game(comp,you) :
         elif you == 'w' : 
             return True
 n = int(input("Enter the Number of times you wish to play : "))
-p = 0
-c = 0
-t = 0
+p = 0   # Player's Score
+c = 0   # Computer's Score
+t = 0   # Ties between Player and Computer
 while n > 0 : 
     randNo = rand.randint(1,3)
     if randNo == 1 : 
