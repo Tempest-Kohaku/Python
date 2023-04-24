@@ -1,11 +1,16 @@
 n = int(input("Enter the Number : "))
-tmp = n
-sum = 0
-while n > 0 : 
-    i = n%10
-    sum += (i**3)
-    n = n//10
-if tmp == sum : 
-    print("The Number given is an Armstrong Number")
-else : 
-    print("The Number given is not an Armstrong Number")
+def prime(a) : 
+    flag = True
+    for i in range(0,n+1) : 
+        if i > 1 : 
+            for num in range(2,i) : 
+                if i%num == 0 : 
+                    flag = False
+                    break
+                else : 
+                    flag = True
+    if flag == True : 
+        print("It is a Prime Number")
+    if flag == False : 
+        print("Number is not a Prime Number")
+prime(n)

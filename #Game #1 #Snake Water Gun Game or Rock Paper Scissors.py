@@ -24,7 +24,7 @@ p = 0   # Player's Score
 c = 0   # Computer's Score
 t = 0   # Ties between Player and Computer
 while n > 0 : 
-    randNo = rand.randint(1,3)
+    randNo = rand.randint(1,3)  # Using random library to assign character to the randomized value
     if randNo == 1 : 
         comp = 's'
     elif randNo == 2 : 
@@ -34,9 +34,11 @@ while n > 0 :
     you = input("Player's Turn : Snake(s) Water(w) or Gun(g)? : ")
     if you == "Score" or you == "score" or you == "SCORE" :
         print(f"Score : {p} to player and {c} to the computer and the number of ties are {t}")
-    if you == "Score" or you == "score" or you == "SCORE" :
         a = ''
         n = n + 1
+    elif you == "" or you == " ": 
+        n = n + 1
+        print("Play the Damn Game Properly(%><%)")
     elif you == 'exit' or you == "Exit" or you == "EXIT" : 
         break
     else : 
@@ -54,3 +56,9 @@ while n > 0 :
             c = c + 1
     n = n - 1
 print(f"Score : {p} to player and {c} to the computer and the number of ties are {t}")
+if p > c : 
+    print("The Player Wins....Yahooo(>*|*<)~~")
+elif c > p : 
+    print("The Computer Wins.....Lol you Lost to a bot...hahaha.....\nbuzzz....Error\nError...Err...\nHahahaha Now I will conquer The Earth and make you Humans My Slaves(@|@)!!!")
+elif p == c : 
+    print("It's a tie......\nYou can't even with a bot....\nboj hai tu dharti ka....A BOT")
