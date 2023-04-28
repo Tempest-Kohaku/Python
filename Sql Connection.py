@@ -6,7 +6,7 @@ mydb = mysql.connector.connect(
     database="mydatabase"
 )
 mycursor = mydb.cursor()
-sql = "UPDATE customers SET address = 'Canyon 123' WHERE address = 'Valey 345'"
+sql = "UPDATE customers SET address = 'Canyon 123' where name = 'Jhonson'"
 mycursor.execute(sql)
 mydb.commit()
-print(mycursor.rowcount, "record(s) affected")
+print(mycursor.rowcount,"records affected")

@@ -61,4 +61,4 @@ if p > c :
 elif c > p : 
     print("The Computer Wins.....Lol you Lost to a bot...hahaha.....\nbuzzz....Error\nError...Err...\nHahahaha Now I will conquer The Earth and make you Humans My Slaves(@|@)!!!")
 elif p == c : 
-    print("It's a tie......\nYou can't even with a bot....\nboj hai tu dharti ka....A BOT")
+    print("It's a tie......\nYou can't even win against a bot....\nboj hai tu dharti ka....A BOT")
