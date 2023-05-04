@@ -1,8 +1,5 @@
-a = []
-n = int(input("Enter the Number of Elements in the List : "))
-for i in range(n+1) : 
-    b = input("Enter the Element : ")
-    a.append(b)
-print("The ELements of the List are : ")
-for i in range(n+1) : 
-    print(a[i])
+n = int(input("Enter the Number of rows for the Pattern : "))
+for i in range(1,n+1) : 
+    for j in range(1,i+1) : 
+        print(j, end = " ")
+    print("")
