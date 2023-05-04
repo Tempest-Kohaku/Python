@@ -1,15 +1,8 @@
-dict1 = dict()
-for i in range(5) : 
-    n = input("Enter the Key : ")
-    m = []
-    for i in range(5) :
-        k = input("Enter the Values : ") 
-        m.append(k)
-    dict1[n] = m
-    print("\n")
-print(dict1)
-print(dict1.keys())
-print(dict1.values())
-
-print(dict1.get("A"))
-# for x in dict1.items() : 
+a = []
+n = int(input("Enter the Number of Elements in the List : "))
+for i in range(n+1) : 
+    b = input("Enter the Element : ")
+    a.append(b)
+print("The ELements of the List are : ")
+for i in range(n+1) : 
+    print(a[i])

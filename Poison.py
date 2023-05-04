@@ -1,5 +1,5 @@
-n = int(input("Enter the Number : "))
-def prime(a) : 
+a = int(input("Enter the Number : "))
+def prime(n) : 
     flag = True
     for i in range(0,n+1) : 
         if i > 1 : 
@@ -13,4 +13,4 @@ def prime(a) :
         print("It is a Prime Number")
     if flag == False : 
         print("Number is not a Prime Number")
-prime(n)
+prime(a)
