@@ -1,11 +1,8 @@
-import mysql.connector
-mydb = mysql.connector.connect(
-    host = "localhost",
-    user = "root",
-    password = "",
-    database = "Practice_Test"
-)
-mycursor = mydb.cursor()
-mycursor.execute("Insert Into Customers Values('Hirasaki','Highway 27',13400)")
-mydb.commit()
-print(mycursor.rowcount,"row(s) updated")
+n = int(input("Enter the Number : "))
+tmp = n
+reverse = 0
+while n > 0 : 
+    x = n%10
+    reverse = (reverse * 10) + x
+    n = n//10
+print(f"The Reverse of {tmp} is {reverse}")
